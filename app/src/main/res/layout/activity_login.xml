@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#00FFFFFF"
+    android:hapticFeedbackEnabled="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_constraintBaseline_creator="@android:integer/config_longAnimTime"
+    tools:context=".ui.login.LoginActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="333dp"
+            android:layout_height="227dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/logo_s1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Shopify"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:drawableStart="@drawable/ic_action_name"
+
+            android:hint="  E-mail"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:drawableStart="@drawable/password"
+            android:hint="  Password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounde_button"
+
+
+            android:foregroundTint="#FFFFFF"
+            android:text="@string/action_sign_in"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/GoogleSignin"
+                    android:layout_width="281dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginStart="24dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_google"
+                    android:drawableStart="@drawable/drawable_icon_size"
+                    android:foregroundTint="#FFFFFF"
+                    android:paddingLeft="20dp"
+                    android:text="@string/Google"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#E43D3838"
+                    android:textSize="19sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="15dp"
+
+            android:background="#B3B4AA"
+            android:backgroundTint="#C8CAC2" />
+
+        <Button
+            android:id="@+id/login2"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="1dp"
+            android:onClick="signup"
+
+            android:background="@android:color/transparent"
+            android:text="@string/action_sign_up"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#D81B60"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:indeterminateTint="#FF97BF4A"
+            android:layout_marginBottom="1dp"
+            android:visibility="gone" />
+
+
+</LinearLayout>

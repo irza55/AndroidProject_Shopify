@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Item_details">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/DItem_title"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    app:cardCornerRadius="10dp">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/DItemImage"
+        android:layout_width="330dp"
+
+        android:layout_height="270dp"
+        android:adjustViewBounds="true"
+
+        android:scaleType="fitCenter" />
+
+</android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="6dp"
+        >
+
+        <ProgressBar
+            android:id="@+id/load"
+            android:layout_width="37dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="150dp"
+            android:indeterminateTint="#FF97BF4A" />
+        <TextView
+            android:id="@+id/DItemprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="right"
+            android:text="Price"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/DItem_desc"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Description" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/minusQuantity"
+                android:onClick="minusQuantity"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="30dp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/showQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="30dp"
+                android:text="1"/>
+
+            <Button
+                android:id="@+id/addQuantity"
+                android:onClick="addQuantity"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="28dp" />
+
+
+            <Button
+                android:layout_width="94dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/circle_button"
+                android:onClick="buy"
+                android:text="BUY"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

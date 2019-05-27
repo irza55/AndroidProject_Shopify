@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+
+            android:id="@+id/nav_home"
+            android:icon="@drawable/elec_tv"
+            android:title="" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/MobilePhonesNavi"
+
+            android:icon="@drawable/mobile_phone"
+            android:title="" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/laptop"
+            android:title="" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/camera"
+            android:title="" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <item
+            android:id="@+id/clothes"
+            android:icon="@drawable/clothes"
+            android:title="" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group6">
+        <item
+            android:id="@+id/logoutNavigation"
+            android:icon="@drawable/logout"
+            android:title="" />
+    </group>
+
+
+
+</menu>
+
