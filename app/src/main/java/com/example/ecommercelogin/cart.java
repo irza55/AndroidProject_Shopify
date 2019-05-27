@@ -106,6 +106,9 @@ totalammount=(TextView)findViewById(R.id.totalamount);
                         obj.Product_Quantity_List.clear();
                         obj.Product_Tprice_List.clear();
                         Purchase_data="";
+                        Check_Out out=new Check_Out();
+                        out.Quan=0;
+                        out.Pricesum=0;
                         finish();
                         startActivity(getIntent());
                         // Write your code here to execute after dialog

@@ -89,7 +89,7 @@ Quantity.setText(Html.fromHtml("Total Products Quantity: "+"<b>"+Quan+"</b>"));
                 }
 
                 if (TextUtils.isEmpty(phoneNo)) {
-                    phone.setError("Enter Password");
+                    phone.setError("Enter PnoneNo");
                     return;
                 }
                    cart obj=new cart();
@@ -104,7 +104,9 @@ Quantity.setText(Html.fromHtml("Total Products Quantity: "+"<b>"+Quan+"</b>"));
                 obj1.Product_Quantity_List.clear();
                 obj1.Product_Price_List.clear();
                 obj1.Product_Name_List.clear();
-                obj1.Product_Tprice_List.clear();;
+                obj1.Product_Tprice_List.clear();
+                Quan=0;
+                Pricesum=0.0;
 //moving to dashboard==============================
                 Intent intent = new Intent(Check_Out.this,dashboard.class);
 //              Log.d("product",Product_Name_List.get(0).toString());

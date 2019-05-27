@@ -217,6 +217,7 @@ holder.setImageLink(model.getImage());
         super.onStop();
         adapter.stopListening();
     }
+    ///search===============================================================================
     private void firebaseSearch(String SearchText){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Data");
@@ -260,8 +261,8 @@ holder.setImageLink(model.getImage());
                 holder.root.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(getApplicationContext(), model.getDescription(),
-                                Toast.LENGTH_LONG).show();
+                       // Toast.makeText(getApplicationContext(), model.getDescription(),
+                              //  Toast.LENGTH_LONG).show();
                         Log.d("start","start");
                         Intent intent = new Intent(ElectronicsActivity.this,Item_details.class);
 //                        Log.d("enter","enter");
@@ -324,8 +325,8 @@ holder.setImageLink(model.getImage());
                 holder.root.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(getApplicationContext(), model.getDescription(),
-                                Toast.LENGTH_LONG).show();
+                      //  Toast.makeText(getApplicationContext(), model.getDescription(),
+                           //     Toast.LENGTH_LONG).show();
                         Log.d("start","start");
                         Intent intent = new Intent(ElectronicsActivity.this,Item_details.class);
 //                        Log.d("enter","enter");
@@ -398,7 +399,9 @@ holder.setImageLink(model.getImage());
         int id = menuItem.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+            Intent intent = new Intent(getApplicationContext(), ElectronicsActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            this.startActivity(intent);
         } else if (id == R.id.MobilePhonesNavi) {
             Intent intent = new Intent(getApplicationContext(), MobilePhones.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
